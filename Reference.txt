@@ -1,0 +1,288 @@
+
+
+React JS 
+----
+  creating react app
+  ----
+    1. React JS App based on JS 
+    2. React JS App based on TS [RECOMMENDED]
+
+  options in build system  
+  ----  
+    1. webpack - popular build system [CHOSEN]
+    2. vite -- modern build system 
+
+
+  React JS App based on TS using webpack
+  -----
+    npx create-react-app react-bosch-app --template typescript
+
+
+
+
+#1: React JS App 
+    1.1 Netflix Clone 
+    1.2 CRUD App - Employee Management App 
+        1.2.1 Add Employee
+        1.2.2 List Employees 
+        1.2.3 Employee Details
+        1.2.4 Update Employee [TODO]
+        1.2.5 Delete Employee [TODO]
+    1.3 E-Commerce (Product Catalog + Add to Cart)  
+    1.4 Todo App 
+        1.4.1 Add Todo
+        1.4.2 List Todos
+        1.4.3 Mark Todo as Completed [TODO]
+        1.4.4 Delete Todo [TODO]
+    1.5 Authentication 
+        1.5.1 Sign Up
+        1.5.2 Log In 
+        1.5.3 Sign Out [TODO]
+          
+
+#2: Redux-Toolkit App 
+
+
+#3: NodeJS + ExpressJS + Mongodb REST API 
+
+
+=====
+  File walkthrough
+  React App Architecture
+  How react apps are running? 
+
+Component in ReactJS 
+=====
+  Skeleton of a component
+    * imports (optional)
+    * component defn 
+       must return JSX
+    * export 
+
+  Types of Components 
+  -----
+    1. Functional Components [RECOMMENDED]
+      1.1 Functional Component with Named Function
+      1.2 Functional Component with Anonymous Function
+      1.3 Functional Component with Arrow Function [RECOMMENDED]
+
+    2. Class Components [NEVER EVER WRITE IT - NOT RECOMMENDED]
+
+  
+Naming Conventions & Casing Conventions
+
+Casing Types
+  1. PascalCase 
+      * Recommended for Interface in TypeScript 
+      * Recommended for React Components and the folder of Components
+
+      examples 
+      ---
+        class CarDetails {
+
+        }
+
+        interface Employee {
+
+        }
+
+  2. camelCase 
+      * Recommended for variables, const, functions, methods in JS & TS 
+      * Recommended for id's of html elements 
+      * Recommended for variables, const, fn, methods, event handlers of React Component
+      * Recommended for CSS classes if you are using CSS Modules in react app
+      
+      examples 
+      -----
+        var myCar = 'BMW';
+        let isLoggedIn = true;
+
+        function getCarInfo() {
+          //....
+        }
+
+  3. kebab-case
+      * Recommended for URLs 
+      * Recommended for file names, folder names, assets in front end projects  
+      * Recommended for css classes 
+
+      examples 
+      -----
+        btn-primary
+        slideshow-container 
+        youtube-logo.png 
+
+  4. snake_case 
+    * never ever use this. 
+    * okay for const in JS & TS if architect accepts
+
+    examples
+    ---
+      const MAX_STUDENTS_PER_CLASS = 30;
+      const maxStudentsPerClass = 30;
+
+
+=======
+Thinking in ReactJS
+-----
+  0. Identify the number of components 
+  1. Breaking the UI into component hierarchy 
+  2. 
+  3. 
+
+
+=====
+  Choices in UI Library 
+    1. Material UI 
+    2. Bootstrap [Chosen]
+      2.1 raw bootstrap 
+      2.2 react-bootstrap
+      2.3 reactstrap
+    3. Ant Design
+    4. Tailwind CSS 
+
+======
+
+
+
+=====
+Project Structure 
+-----
+  src/
+    layouts/
+      Header.tsx 
+      Footer.tsx 
+    components/
+    pages/
+      Home.tsx
+    models/
+    App.tsx 
+    App.css 
+    App.test.tsx 
+    index.tsx 
+    index.css
+
+
+Limitations of JSX 
+======
+  1. JSX elements must be closed. either with a self-closing tag or with a closing tag.
+  2. JSX elements can't have class attribute. replace it with className.
+  3. JSX elements can have style attribute with objects in styles 
+  4. JSX expressions must have one parent element. use Fragment instead
+
+
+Core Concepts of ReactJS
+-----
+  1. Props [DONE]
+  2. States [DONE]
+  3. Events [DONE]
+  4. Conditional Rendering [DONE]
+  5. Lists & Keys [DONE]
+
+====
+
+Characteristics of SPA
+  1. Pages should NOT Refresh [DONE]
+  2. URL should change [DONE]
+  3. History should be maintained w/o page refresh  [DONE]
+  4. Header and Footer should NOT be loaded again and again  [DONE]
+  5. The section in b/w Header and Footer should show contextual updates [DONE]
+  6. Active Menu should be set [TODO]
+  7. Page Title should be updated [TODO]
+
+using react-router-dom 
+
+Routing 
+=====
+  Step 0: Install react-router-dom
+    npm install react-router-dom
+
+  Step 1: Identify the urls for the menus
+    1. Home                       url: '/'
+    2. Netflix                    url: '/netflix'
+    3. Employee Manager App       url: '/employee-manager'
+    4. Products                   url: '/products'
+    5. Todos                      url: '/todos'
+    6. About                      url: '/about'
+    7. Contact                    url: '/contact'
+
+  Step 2: Creating the components for the urls 
+    src/
+      pages/
+        HomePage.tsx 
+        NetflixPage.tsx
+        EmployeeManagerPage.tsx
+        ProductsPage.tsx
+        TodosPage.tsx
+        AboutPage.tsx
+        ContactPage.tsx
+
+  Step 3: Configure the routes in App.tsx
+    and also put the whole app under BrowserRouter
+
+  Step 4: Check the app. Pages will refresh. Let's fix it. 
+    Goto MenuList.tsx 
+    replace all a href with Link to 
+
+
+=====
+Cross Component Communication
+------
+  1. Parent Component to Child Component Communication [DONE]
+      using Props  
+
+  2. Child Component to Parent Component Communication [DONE]
+      using Props, states, events and callback function
+
+  3. Any Component to Any Component Communication
+      3.1 using React Context API (or)
+      3.2 using Redux-Toolkit / zustand / recoil / mobx
+
+Demo of Styles 
+------
+  * external styles [DONE]
+  * internal styles [DONE]
+  * inline styles [DONE]
+  * CSS Modules [DONE]
+  * SCSS [DONE]
+
+Demo Two Way Binding [DONE]
+-----
+  * controlled component -- 
+
+
+CRUD App
+----
+  * Add Employee [ DONE]
+      localhost:3000/employee-manager/add
+      HTTP Method: POST
+
+  * List Employees [ DONE]
+      localhost:3000/employee-manager/
+      HTTP Method: GET
+
+  * Employee Details [DONE]
+      localhost:3000/employee-manager/1
+      localhost:3000/employee-manager/32456
+
+      HTTP Method: GET
+
+  * Update Employee [TODO]
+      localhost:3000/employee-manager/32456   (Bootstrap Modal) -- or else 
+      localhost:3000/employee-manager/32456/edit  
+
+      HTTP Method: PUT / PATCH 
+  
+  * Delete Employee [TODO]
+      localhost:3000/employee-manager/32456/   (Bootstrap Modal)
+      HTTP Method: DELETE
+
+==========
+
+
+Context API 
+------
+  * createContext 
+  * pass the data through the context (ContextProvider)
+  * access the context data in any component using useContext 
+

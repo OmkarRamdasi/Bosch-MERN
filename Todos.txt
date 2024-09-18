@@ -1,0 +1,25 @@
+1. Learn about integrating bootstrap in create-react-app (cra) based app. [DONE]
+2. Implement active menu in MenuList component -[DONE]
+3. Implement page title. use react-helmet-async to implement. [DONE]
+4. Implement SCSS in create-react-app (cra) based app.[DONE]
+5. In Add Employee, Implement Validations (Will review it on Thursday)- [Done]
+  * disable submit button until all the fields are filled.-Done
+  * show error messages for each field.-Done
+  * disable the submit button after the form is submitted, until the response comes. show the lable as "submitting... - Done
+6. Learn about Nested Routing and implement it in About Page (Will review it on Thursday)
+    urls: 
+      localhost:3000/company
+      localhost:3000/company/leadership/
+      localhost:3000/company/our-history/
+      localhost:3000/company/annual-report/
+7. Complete Edit Employee
+8. Complete Delete Employee
+9. Connect to fakestoreapi.com and implement the following features
+  * List Products Page 
+10. 
+
+
+
+
+
+
