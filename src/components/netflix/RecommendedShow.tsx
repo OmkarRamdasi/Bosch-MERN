@@ -35,7 +35,7 @@ const RecommendedShow: React.FC<RecommendedShowProps> = (props) => {
       </ul>
       <div className="card-body">
         <button className="btn btn-primary">Watch now</button>
-        {/* conditional rendering inside JSX*/}
+     
         <button
           className="btn btn-success ms-2"
           onClick={() => props.handleManageWatchlist(props.index)}>

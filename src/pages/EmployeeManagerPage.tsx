@@ -10,14 +10,6 @@ const EmployeeManagerPage = () => {
   const [isError, setIsError] = useState<boolean>(false);
 
   useEffect(() => {
-    // this callback fn will be called only once -- after initial rendering
-    // ideal place for you to connect to rest api
-    /* 
-      1. What's the REST API Endpoint? https://jsonplaceholder.typicode.com/users
-      2. What's the HTTP Method? GET
-      3. What's the REST API Client? axios (npm i axios)
-    */
-
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res: any) => {
@@ -88,7 +80,6 @@ const EmployeeManagerPage = () => {
           </div>
         )}
 
-        {/* List Employees */}
         {employees?.map((employee) => {
           return (
             <div className="col-12 col-md-6 col-lg-4" key={employee.id}>

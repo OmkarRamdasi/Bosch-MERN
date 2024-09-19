@@ -1,17 +1,10 @@
-/*
-  Skeleton of a component
-    * imports (optional)
-    * component defn 
-       must return JSX
-    * export 
-*/
 
 import { Link } from "react-router-dom";
 import MenuList from "./MenuList/MenuList";
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
 
-// Functional Component with Named Function
+
 function Header() {
   const appName = "React Bosch App";
 
@@ -21,7 +14,7 @@ function Header() {
   }
   const { cartItems } = cartContext;
 
-  // must return JSX
+
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

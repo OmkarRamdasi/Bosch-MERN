@@ -7,14 +7,8 @@ interface LatestShowProps {
 }
 
 const LatestShow = (props: LatestShowProps) => {
-  // receiving the data from parent component
-  console.log(props);
 
-  /* props
-   * props are passed to child component
-   * props are object
-   * props are read-only.
-   */
+  
 
   return (
     <div className="card">

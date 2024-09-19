@@ -42,8 +42,6 @@ const ProductsPage = () => {
   const { addToCart } = cartContext;
 
   const handleAddToCart = (product: IProduct) => {
-    console.log(product);
-    // We have to send the above product to the context
     addToCart(product);
   };
 

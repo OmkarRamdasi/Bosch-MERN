@@ -4,7 +4,7 @@ const ContactPage = () => {
   const [userName, setUserName] = useState<string>("arun");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(event.target.value); // entered form input data
+    console.log(event.target.value); 
     setUserName(event.target.value);
   }
   

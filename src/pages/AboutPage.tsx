@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 const AboutPage = () => {
-  // Internal Styles
+
   const myButtonStyle = {
     color: "#fff",
     fontSize: "20px",
@@ -29,8 +29,6 @@ const AboutPage = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
           quidem.
         </p>
-
-        {/* Internal Styles  */}
         <button style={myButtonStyle}>Subscibe Monthly Plan</button>
         <button style={myButtonStyle}>Subscribe Annual Plan</button>
       </div>

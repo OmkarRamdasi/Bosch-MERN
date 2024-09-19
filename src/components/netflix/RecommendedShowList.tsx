@@ -2,7 +2,7 @@ import { useState } from "react";
 import RecommendedShow from "./RecommendedShow";
 
 const RecommendedShowList = () => {
-  // state
+
   const [recommendedShows, setRecommendedShows] = useState([
     {
       id: 567346574,
@@ -36,7 +36,6 @@ const RecommendedShowList = () => {
     },
   ]);
 
-  // conditional rendering outside JSX
   if (recommendedShows && recommendedShows.length === 0) {
     return (
       <div className="alert alert-warning">
@@ -45,18 +44,18 @@ const RecommendedShowList = () => {
     );
   }
 
-  // event handler function
+
   const handleManageWatchlist = (index: number) => {
     const duplicateShows = [...recommendedShows];
 
-    // update the state -- specifically the isInWatchlist property
+
     duplicateShows[index].isInWatchlist = !duplicateShows[index].isInWatchlist;
     setRecommendedShows(duplicateShows);
   };
 
   return (
     <div className="row">
-      {/* Lists & Keys  */}
+
       {recommendedShows.map((show, index) => {
         console.log("rendering");
         return (

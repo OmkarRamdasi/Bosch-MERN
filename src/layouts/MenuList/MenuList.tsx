@@ -1,6 +1,5 @@
 import { Link,useLocation } from "react-router-dom";
 import styles from './MenuList.module.scss'
-// Functional Component with Arrow Function
 const MenuList = () => {
   const location = useLocation();
   const isActive = (path: string): boolean => location?.pathname === path;
